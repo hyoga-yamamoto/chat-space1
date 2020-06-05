@@ -1,0 +1,44 @@
+.chat-main
+  .header
+    .right-header
+      .right-header__title
+        グループ名
+      %ul.right-header__members
+        Member：
+        %li.member
+          メンバー名
+    
+    = link_to '#' do
+      .right-header__edit-btn
+        Edit
+
+  .messages
+    .message
+      .upper-message
+        .upper-message__user-name
+          メンバー
+        .upper-message__date
+          2017/04/04
+      .message__text
+        aaaaa
+    .message
+      .upper-message
+        .upper-message__user-name
+          メンバー
+        .upper-message__date
+          2017/04/04
+      .message__text
+        aaaaa
+  .message-form
+    %form
+      .input-box
+        %input.input-box__text{placeholder: 'type a message'}
+        %label.input-box__image
+          = icon('fa', 'image',class: 'icon')
+          %input.input-box__image__file{type: "file"}
+      %input.submit-btn{type: 'submit', value: 'Send'}
+      
+
+
+
+ 
